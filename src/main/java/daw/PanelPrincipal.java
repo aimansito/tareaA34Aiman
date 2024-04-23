@@ -62,7 +62,7 @@ public class PanelPrincipal extends JPanel implements ActionListener{
                 case "+" -> {
                     valor = Double.parseDouble(areaTexto.getText());
                     tipoOperacion = 0;
-                    areaTexto.setText(Double.parseDouble(areaTexto.getText())+"+"+valor);
+                    areaTexto.setText("");
                 }
                 case "-" -> {
                     valor = Double.parseDouble(areaTexto.getText());
@@ -72,16 +72,16 @@ public class PanelPrincipal extends JPanel implements ActionListener{
                 case "*" -> {
                     valor = Double.parseDouble(areaTexto.getText());
                     tipoOperacion = 2;
-                    areaTexto.setText(valor+"");
+                    areaTexto.setText("");
                 }
                 case "/" -> {
                     valor = Double.parseDouble(areaTexto.getText());
                     tipoOperacion = 3;
-                    areaTexto.setText(valor+"");
+                    areaTexto.setText("");
                 }
                 case "C" -> {
                     tipoOperacion = -1;
-                    areaTexto.setText(valor+"");
+                    areaTexto.setText("");
                 }
                 case "=" -> {
                     try {
